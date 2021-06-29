@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href="/new">New Message</a>
+    <h1><%= title %></h1>
+    <% messages.forEach(message => { %>
+        <div class="message-box">
+            <p class = "date-added"><%= format(message.added, {addSuffix: true, includeSeconds: true}) %></p>
+            <p><b><%= message.user %></b></p>
+            <p class = "text"><%= message.text %></p>
+        </div>
+    <% }) %>
+  </body>
+</html>

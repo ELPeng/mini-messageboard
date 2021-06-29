@@ -1,0 +1,60 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #42445a;
+}
+
+.message-box{
+    width: 400px;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    border-radius: 2%;
+    box-shadow: 4px 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.message-box:hover{
+    transform: translate(10px);
+}
+.message-box .text{
+    margin-top: 0px;
+}
+.message-box .date-added{
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.form-box{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box input, .form-box textarea{
+    width: 50%;
+    margin: 10px 0px;
+}
+
+.form-box textarea{
+    width: 50%;
+    height: 100px;
+    margin: 10px 0px;
+}
+
+.form-box button{
+    margin-top: 10px;
+    width: 25%;
+}
+
+a{
+    color: white;
+}
+
+h1, h2{
+    color: white;
+    text-shadow: 5px 5px black;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <a href="/">< Back</a>
+    <form class = "form-box" method="POST" action="/new">
+        <h2><%= title %></h2>
+        <input name="messageUser" type="text" placeholder="Name">
+        <textarea name="messageText" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
